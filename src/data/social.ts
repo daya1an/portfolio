@@ -1,17 +1,16 @@
 export const socialData = {
   links: [
-    { platform: "GitHub", url: "https://github.com", icon: "github" },
-    { platform: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-    { platform: "Twitter", url: "https://twitter.com", icon: "twitter" },
-    { platform: "Email", url: "mailto:alex@example.com", icon: "mail" },
+    { platform: "GitHub", url: "https://github.com/daya1an", icon: "github" },
+    { platform: "LinkedIn", url: "https://linkedin.com/in/dayalands", icon: "linkedin" },
+    { platform: "Email", url: "mailto:dayalands2210@gmail.com", icon: "mail" },
   ],
-  gamerTag: "AX_CH3N",
-  discord: "alexchen#1337",
+  gamerTag: "DAYA1AN",
+  discord: "",
 };
 
 export const contactData = {
   heading: "READY TO CONNECT?",
   subheading: "Let's build something legendary together",
-  email: "alex@example.com",
+  email: "dayalands2210@gmail.com",
   ctaText: "SEND MESSAGE",
 };

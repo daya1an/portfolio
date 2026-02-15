@@ -39,9 +39,19 @@ const Experience: React.FC = () => {
                 <p className="text-primary/80 font-display text-xs tracking-wider uppercase mb-3">
                   {exp.company}
                 </p>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                <p className="text-muted-foreground text-sm mb-3 leading-relaxed">
                   {exp.description}
                 </p>
+                {exp.highlights && exp.highlights.length > 0 && (
+                  <ul className="space-y-1.5 mb-4">
+                    {exp.highlights.map((h, idx) => (
+                      <li key={idx} className="text-muted-foreground text-xs leading-relaxed flex gap-2">
+                        <span className="text-primary mt-0.5 shrink-0">▸</span>
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 <div className="flex flex-wrap gap-2">
                   {exp.tech.map((t) => (
                     <span
