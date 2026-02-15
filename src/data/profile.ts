@@ -1,7 +1,7 @@
 export const profileData = {
   name: "Dayalan D.S.",
-  role: "Development Engineer | Full Stack & AI Builder",
-  tagline: "Software Engineer specializing in full-stack development across distributed systems, cloud infrastructure, and AI/ML integration",
+  role: "Full-Stack SDE | Cloud Enthusiast | DevSecOps | AI/ML Integrator",
+  tagline: "Software Engineer specializing in full-stack development across distributed systems, cloud infrastructure, DevSecOps and AI/ML integration",
   greeting: "HELLO WORLD_",
   bio: [
     "Software Engineer with 2.5+ years of experience specializing in full-stack development across distributed systems. Strong foundation in backend development with Java Spring Boot, frontend development with React and Angular, and AI/ML integration.",
@@ -11,8 +11,8 @@ export const profileData = {
   stats: [
     { label: "Years Exp", value: "2.5+" },
     { label: "Technologies", value: "25+" },
-    { label: "Domains", value: "B2B/B2C" },
-    { label: "Cloud", value: "GCP/AWS" },
+    { label: "Domains", value: "SCM, ECOM, Logistics" },
+    { label: "Cloud", value: "GCP,AWS & OpenShift" },
   ],
   resumeUrl: "#",
   avatarUrl: "",

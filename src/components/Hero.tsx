@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { profileData } from "../data/profile";
 import NeonButton from "./gaming-ui/NeonButton";
+import profilePic from "../../assets/profile-pic.png";
 import { ChevronDown } from "lucide-react";
 
 const Hero: React.FC = () => {
@@ -77,9 +78,7 @@ const Hero: React.FC = () => {
             <div className="absolute -inset-2 rounded-full border border-primary/10 animate-spin" style={{ animationDuration: "20s" }} />
             {/* Avatar placeholder */}
             <div className="absolute inset-2 rounded-full bg-muted flex items-center justify-center overflow-hidden border border-border">
-              <span className="font-display text-5xl md:text-6xl font-bold text-gradient-neon">
-                {profileData.name.split(" ").map(n => n[0]).join("")}
-              </span>
+              <img src={profilePic} alt={profileData.name} className="w-full h-full object-cover" />
             </div>
             {/* Corner accents */}
             <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-primary" />
