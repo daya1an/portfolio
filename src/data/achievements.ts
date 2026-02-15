@@ -7,33 +7,33 @@ export interface Achievement {
 
 export const achievementsData: Achievement[] = [
   {
-    title: "AWS Solutions Architect",
-    description: "Professional certification for cloud architecture design",
+    title: "Spring Boot Microservices Expert",
+    description: "Implemented enterprise-grade microservices with design patterns at scale",
+    icon: "trophy",
+    year: "2024",
+  },
+  {
+    title: "Query Optimization — 50% Latency Reduction",
+    description: "Optimized SQL on million-record datasets through strategic indexing and ACID compliance",
+    icon: "award",
+    year: "2024",
+  },
+  {
+    title: "GCP Cloud Architecture",
+    description: "Deployed production applications on Cloud Run, Cloud SQL, BigQuery, and Pub/Sub",
     icon: "certificate",
     year: "2024",
   },
   {
-    title: "Hackathon Winner",
-    description: "1st place at Global AI Hackathon 2023",
-    icon: "trophy",
-    year: "2023",
-  },
-  {
-    title: "Open Source Contributor",
-    description: "500+ contributions to major open source projects",
+    title: "GenAI Integration",
+    description: "Built Spring AI REST service with Gemini model, Resilience4j, and Prometheus observability",
     icon: "star",
-    year: "2023",
+    year: "2025",
   },
   {
-    title: "Tech Speaker",
-    description: "Keynote speaker at ReactConf and NodeSummit",
-    icon: "award",
-    year: "2022",
-  },
-  {
-    title: "Google Developer Expert",
-    description: "Recognized expertise in web technologies",
+    title: "B.E. Information Science & Engineering",
+    description: "Kumaraguru College of Technology, Coimbatore, Tamil Nadu",
     icon: "medal",
-    year: "2022",
+    year: "2023",
   },
 ];

@@ -1,5 +1,5 @@
 export const navigationData = {
-  brand: "PLAYER_ONE",
+  brand: "DAYALAN_DS",
   links: [
     { label: "HOME", href: "#hero" },
     { label: "ABOUT", href: "#about" },

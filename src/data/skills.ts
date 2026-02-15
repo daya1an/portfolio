@@ -1,7 +1,7 @@
 export interface Skill {
   name: string;
-  icon: string; // "auto" = resolve from devicon, or manual SVG URL
-  level?: number; // 1-100
+  icon: string;
+  level?: number;
 }
 
 export interface SkillCategory {
@@ -12,83 +12,112 @@ export interface SkillCategory {
 export const skillsData: { categories: SkillCategory[] } = {
   categories: [
     {
+      name: "Languages",
+      skills: [
+        { name: "Java", icon: "auto", level: 95 },
+        { name: "Python", icon: "auto", level: 85 },
+        { name: "TypeScript", icon: "auto", level: 88 },
+        { name: "JavaScript", icon: "auto", level: 90 },
+        { name: "SQL", icon: "auto", level: 90 },
+        { name: "C/C++", icon: "auto", level: 75 },
+      ],
+    },
+    {
       name: "Frontend",
       skills: [
-        { name: "React", icon: "auto", level: 95 },
-        { name: "TypeScript", icon: "auto", level: 90 },
-        { name: "Next.js", icon: "auto", level: 85 },
-        { name: "Tailwind CSS", icon: "auto", level: 92 },
+        { name: "React", icon: "auto", level: 88 },
+        { name: "Angular", icon: "auto", level: 85 },
+        { name: "Redux", icon: "auto", level: 82 },
         { name: "HTML5", icon: "auto", level: 95 },
         { name: "CSS3", icon: "auto", level: 90 },
       ],
     },
     {
-      name: "Backend",
+      name: "Backend & Frameworks",
       skills: [
-        { name: "Node.js", icon: "auto", level: 88 },
-        { name: "Python", icon: "auto", level: 85 },
-        { name: "Express", icon: "auto", level: 85 },
-        { name: "GraphQL", icon: "auto", level: 78 },
-        { name: "FastAPI", icon: "auto", level: 80 },
+        { name: "Spring Boot", icon: "auto", level: 95 },
+        { name: "Node.js", icon: "auto", level: 80 },
+        { name: "Hibernate", icon: "auto", level: 88 },
+        { name: "GraphQL", icon: "auto", level: 75 },
       ],
     },
     {
-      name: "DevOps",
+      name: "Cloud & DevOps",
       skills: [
-        { name: "Docker", icon: "auto", level: 82 },
+        { name: "GCP", icon: "auto", level: 85 },
         { name: "AWS", icon: "auto", level: 75 },
-        { name: "GitHub Actions", icon: "auto", level: 80 },
-        { name: "Kubernetes", icon: "auto", level: 65 },
-        { name: "Linux", icon: "auto", level: 80 },
+        { name: "Docker", icon: "auto", level: 85 },
+        { name: "Kubernetes", icon: "auto", level: 78 },
+        { name: "Terraform", icon: "auto", level: 75 },
+        { name: "Jenkins", icon: "auto", level: 80 },
+        { name: "GitHub Actions", icon: "auto", level: 82 },
       ],
     },
     {
       name: "Databases",
       skills: [
-        { name: "PostgreSQL", icon: "auto", level: 85 },
+        { name: "PostgreSQL", icon: "auto", level: 88 },
         { name: "MongoDB", icon: "auto", level: 82 },
-        { name: "Redis", icon: "auto", level: 75 },
-        { name: "Firebase", icon: "auto", level: 78 },
+        { name: "Redis", icon: "auto", level: 80 },
+        { name: "MySQL", icon: "auto", level: 85 },
+        { name: "Oracle", icon: "auto", level: 78 },
       ],
     },
     {
-      name: "Tools",
+      name: "Tools & Middleware",
       skills: [
+        { name: "Kafka", icon: "auto", level: 82 },
         { name: "Git", icon: "auto", level: 92 },
-        { name: "Figma", icon: "auto", level: 70 },
-        { name: "VS Code", icon: "auto", level: 95 },
-        { name: "Jira", icon: "auto", level: 75 },
+        { name: "Jira", icon: "auto", level: 80 },
+        { name: "Elasticsearch", icon: "auto", level: 75 },
+      ],
+    },
+    {
+      name: "AI / ML",
+      skills: [
+        { name: "Spring AI", icon: "auto", level: 80 },
+        { name: "LangChain", icon: "auto", level: 75 },
+        { name: "Scikit-Learn", icon: "auto", level: 70 },
       ],
     },
   ],
 };
 
-// Map skill names to devicon class names
 const deviconMap: Record<string, string> = {
-  "React": "react",
+  "Java": "java",
+  "Python": "python",
   "TypeScript": "typescript",
-  "Next.js": "nextjs",
-  "Tailwind CSS": "tailwindcss",
+  "JavaScript": "javascript",
+  "SQL": "azuresqldatabase",
+  "C/C++": "cplusplus",
+  "React": "react",
+  "Angular": "angularjs",
+  "Redux": "redux",
   "HTML5": "html5",
   "CSS3": "css3",
+  "Spring Boot": "spring",
   "Node.js": "nodejs",
-  "Python": "python",
-  "Express": "express",
+  "Hibernate": "hibernate",
   "GraphQL": "graphql",
-  "FastAPI": "fastapi",
-  "Docker": "docker",
+  "GCP": "googlecloud",
   "AWS": "amazonwebservices",
-  "GitHub Actions": "githubactions",
+  "Docker": "docker",
   "Kubernetes": "kubernetes",
-  "Linux": "linux",
+  "Terraform": "terraform",
+  "Jenkins": "jenkins",
+  "GitHub Actions": "githubactions",
   "PostgreSQL": "postgresql",
   "MongoDB": "mongodb",
   "Redis": "redis",
-  "Firebase": "firebase",
+  "MySQL": "mysql",
+  "Oracle": "oracle",
+  "Kafka": "apachekafka",
   "Git": "git",
-  "Figma": "figma",
-  "VS Code": "vscode",
   "Jira": "jira",
+  "Elasticsearch": "elasticsearch",
+  "Spring AI": "spring",
+  "LangChain": "",
+  "Scikit-Learn": "scikitlearn",
 };
 
 export function getIconUrl(skill: Skill): string {

@@ -3,41 +3,59 @@ export interface Experience {
   company: string;
   period: string;
   description: string;
+  highlights: string[];
   tech: string[];
-  level: number; // game level metaphor
+  level: number;
 }
 
 export const experienceData: Experience[] = [
   {
-    title: "Senior Full Stack Engineer",
-    company: "TechCorp Global",
-    period: "2023 — Present",
-    description: "Leading development of AI-powered SaaS platform serving 100K+ users. Architecting microservices and mentoring junior developers.",
-    tech: ["React", "TypeScript", "Python", "AWS", "PostgreSQL"],
+    title: "Junior Engineer — Backend & Microservices",
+    company: "Ford Motor Company",
+    period: "Jul 2023 — Present",
+    description: "Building and maintaining distributed microservices for enterprise-scale automotive platforms.",
+    highlights: [
+      "Implemented Spring Boot microservices with API Gateway, Circuit Breaker, Saga, and Sidecar patterns",
+      "Optimized SQL queries reducing latency by 50% on million-record datasets through strategic indexing",
+      "Developed concurrent batch-processing services with Kafka/JMS for real-time updates",
+      "Implemented JWT/OAuth2 authentication with MS Entra ID and Azure Access Packages",
+    ],
+    tech: ["Spring Boot", "Java", "Kafka", "Redis", "PostgreSQL", "OAuth2"],
     level: 5,
   },
   {
-    title: "Full Stack Developer",
-    company: "InnovateLab",
-    period: "2021 — 2023",
-    description: "Built real-time collaboration tools and data visualization dashboards. Reduced API response times by 60%.",
-    tech: ["Next.js", "Node.js", "MongoDB", "Docker", "GraphQL"],
+    title: "Junior Engineer — Frontend Development",
+    company: "Ford Motor Company",
+    period: "Jul 2023 — Present",
+    description: "Building responsive, secure web applications with modern frontend frameworks.",
+    highlights: [
+      "Built responsive React/Angular pages with Redux and component libraries (Prime, Material-UI)",
+      "Remediated OWASP vulnerabilities and implemented unit/integration testing with Jest and RTL",
+      "Developed high-performance search features using Elasticsearch with custom analyzers",
+    ],
+    tech: ["React", "Angular", "Redux", "TypeScript", "Jest"],
     level: 4,
   },
   {
-    title: "Frontend Developer",
-    company: "DigitalWave Agency",
-    period: "2020 — 2021",
-    description: "Developed responsive web applications for enterprise clients. Implemented design systems and component libraries.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Figma"],
+    title: "Junior Engineer — Cloud & DevOps",
+    company: "Ford Motor Company",
+    period: "Jul 2023 — Present",
+    description: "Deploying and managing cloud-native applications with modern DevOps practices.",
+    highlights: [
+      "Deployed applications on GCP (Cloud Run, Cloud SQL, BigQuery, Pub/Sub) and OpenShift",
+      "Provisioned infrastructure using Terraform IaC and built CI/CD pipelines with Jenkins/Tekton",
+      "Established observability using Splunk and Dynatrace for distributed logging and alerting",
+    ],
+    tech: ["GCP", "OpenShift", "Docker", "Terraform", "Jenkins", "Kubernetes"],
     level: 3,
   },
   {
-    title: "Junior Developer",
-    company: "StartupX",
-    period: "2019 — 2020",
-    description: "Built MVP features for an e-commerce platform. First exposure to agile development and CI/CD pipelines.",
-    tech: ["JavaScript", "Node.js", "Express", "MySQL"],
-    level: 2,
+    title: "B.E. Information Science & Engineering",
+    company: "Kumaraguru College of Technology",
+    period: "2019 — 2023",
+    description: "Bachelor of Engineering in Information Science and Engineering, Coimbatore, Tamil Nadu.",
+    highlights: [],
+    tech: ["Data Structures", "Algorithms", "OOP", "DBMS"],
+    level: 1,
   },
 ];
