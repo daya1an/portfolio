@@ -12,12 +12,10 @@ const iconMap: Record<string, React.ElementType> = {
 const Footer: React.FC = () => {
   return (
     <footer className="border-t border-border py-8 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-2">
-          <span className="font-display text-xs tracking-widest text-muted-foreground">
-            GG // {socialData.gamerTag}
-          </span>
-        </div>
+      <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span className="text-xs text-muted-foreground font-medium">
+          {socialData.gamerTag}
+        </span>
 
         <div className="flex items-center gap-4">
           {socialData.links.map((link) => {
@@ -28,17 +26,17 @@ const Footer: React.FC = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors duration-200"
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 aria-label={link.platform}
               >
-                {Icon && <Icon size={18} />}
+                {Icon && <Icon size={16} />}
               </a>
             );
           })}
         </div>
 
-        <p className="text-xs text-muted-foreground font-mono">
-          © {new Date().getFullYear()} // ALL RIGHTS RESERVED
+        <p className="text-xs text-muted-foreground">
+          © {new Date().getFullYear()} All rights reserved
         </p>
       </div>
     </footer>
