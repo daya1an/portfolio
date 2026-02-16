@@ -2,70 +2,69 @@ import React from "react";
 import { motion } from "framer-motion";
 import SectionContainer from "./gaming-ui/SectionContainer";
 import { experienceData } from "../data/experience";
+import { Timeline } from "primereact/timeline";
+import { Tag } from "primereact/tag";
 
 const Experience: React.FC = () => {
-  return (
-    <SectionContainer id="experience" title="// CAREER LOG" subtitle="Level progression & quest history">
-      <div className="relative">
-        {/* Vertical line */}
-        <div className="absolute left-4 md:left-8 top-0 bottom-0 w-px bg-border" />
+  const customMarker = (item: typeof experienceData[0]) => (
+    <div className="w-8 h-8 rounded-full border-2 border-foreground/20 bg-background flex items-center justify-center">
+      <span className="text-[10px] font-bold text-foreground">{item.level}</span>
+    </div>
+  );
 
-        <div className="space-y-8">
-          {experienceData.map((exp, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.4 }}
-              className="relative pl-12 md:pl-20"
-            >
-              {/* Level badge */}
-              <div className="absolute left-0 md:left-4 top-0 w-8 h-8 rounded-full border-2 border-primary bg-background flex items-center justify-center">
-                <span className="font-display text-xs font-bold text-primary">
-                  {exp.level}
-                </span>
-              </div>
-
-              <div className="border border-border rounded-lg p-5 md:p-6 bg-card hover:border-primary/30 transition-all duration-300 group">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-3">
-                  <h3 className="font-display text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {exp.title}
-                  </h3>
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {exp.period}
-                  </span>
-                </div>
-                <p className="text-primary/80 font-display text-xs tracking-wider uppercase mb-3">
-                  {exp.company}
-                </p>
-                <p className="text-muted-foreground text-sm mb-3 leading-relaxed">
-                  {exp.description}
-                </p>
-                {exp.highlights && exp.highlights.length > 0 && (
-                  <ul className="space-y-1.5 mb-4">
-                    {exp.highlights.map((h, idx) => (
-                      <li key={idx} className="text-muted-foreground text-xs leading-relaxed flex gap-2">
-                        <span className="text-primary mt-0.5 shrink-0">▸</span>
-                        {h}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                <div className="flex flex-wrap gap-2">
-                  {exp.tech.map((t) => (
-                    <span
-                      key={t}
-                      className="px-2 py-1 text-xs font-mono rounded border border-border text-muted-foreground bg-muted"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
+  const customContent = (item: typeof experienceData[0], index: number) => (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.08, duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className="border border-border rounded-lg p-5 md:p-6 mb-6 hover:bg-muted/30 transition-colors duration-300"
+    >
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
+        <h3 className="text-sm md:text-base font-semibold text-foreground">
+          {item.title}
+        </h3>
+        <span className="text-xs text-muted-foreground font-medium">{item.period}</span>
+      </div>
+      <p className="text-xs tracking-wide uppercase text-muted-foreground font-medium mb-3">
+        {item.company}
+      </p>
+      <p className="text-muted-foreground text-sm mb-3 leading-relaxed">{item.description}</p>
+      {item.highlights && item.highlights.length > 0 && (
+        <ul className="space-y-1.5 mb-4">
+          {item.highlights.map((h, idx) => (
+            <li key={idx} className="text-muted-foreground text-xs leading-relaxed flex gap-2">
+              <span className="text-foreground/40 mt-0.5 shrink-0">—</span>
+              {h}
+            </li>
           ))}
-        </div>
+        </ul>
+      )}
+      <div className="flex flex-wrap gap-1.5">
+        {item.tech.map((t) => (
+          <Tag key={t} value={t} className="!px-2 !py-0.5" />
+        ))}
+      </div>
+    </motion.div>
+  );
+
+  return (
+    <SectionContainer id="experience" title="Experience" subtitle="Career progression and key roles.">
+      <div className="hidden md:block">
+        <Timeline
+          value={experienceData.map((item, index) => ({ ...item, _index: index }))}
+          marker={(item) => customMarker(item)}
+          content={(item) => customContent(item, item._index)}
+          className="[&_.p-timeline-event-opposite]:hidden [&_.p-timeline-event-content]:pl-4"
+        />
+      </div>
+      {/* Mobile fallback without Timeline */}
+      <div className="md:hidden space-y-4">
+        {experienceData.map((item, index) => (
+          <div key={index}>
+            {customContent(item, index)}
+          </div>
+        ))}
       </div>
     </SectionContainer>
   );

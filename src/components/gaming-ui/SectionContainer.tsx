@@ -18,22 +18,21 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
 }) => {
   return (
     <section id={id} className={`py-20 md:py-28 px-4 md:px-8 ${className}`}>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {title && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5 }}
-            className="mb-12 md:mb-16"
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="mb-14 md:mb-18"
           >
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-gradient-neon mb-3">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-2">
               {title}
             </h2>
             {subtitle && (
-              <p className="text-muted-foreground text-lg">{subtitle}</p>
+              <p className="text-muted-foreground text-base md:text-lg">{subtitle}</p>
             )}
-            <div className="mt-4 h-0.5 w-20 bg-primary rounded-full" />
           </motion.div>
         )}
         {children}

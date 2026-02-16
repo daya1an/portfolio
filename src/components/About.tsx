@@ -5,17 +5,16 @@ import { profileData } from "../data/profile";
 
 const About: React.FC = () => {
   return (
-    <SectionContainer id="about" title="// ABOUT ME" subtitle="Player biography & stats">
-      <div className="grid md:grid-cols-5 gap-8 md:gap-12">
-        {/* Bio */}
-        <div className="md:col-span-3 space-y-4">
+    <SectionContainer id="about" title="About" subtitle="A bit about me and what I do.">
+      <div className="grid md:grid-cols-5 gap-10 md:gap-14">
+        <div className="md:col-span-3 space-y-5">
           {profileData.bio.map((paragraph, i) => (
             <motion.p
               key={i}
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.4 }}
+              transition={{ delay: i * 0.08, duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="text-muted-foreground leading-relaxed"
             >
               {paragraph}
@@ -23,21 +22,20 @@ const About: React.FC = () => {
           ))}
         </div>
 
-        {/* Stats */}
         <div className="md:col-span-2 grid grid-cols-2 gap-4">
           {profileData.stats.map((stat, i) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.3 }}
-              className="border border-border rounded-lg p-4 text-center bg-card hover:border-primary/40 transition-colors duration-300"
+              transition={{ delay: i * 0.08, duration: 0.35 }}
+              className="border border-border rounded-lg p-5 text-center hover:bg-muted/50 transition-colors duration-300"
             >
-              <div className="text-2xl md:text-3xl font-display font-bold text-primary mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-foreground mb-1">
                 {stat.value}
               </div>
-              <div className="text-xs font-mono text-muted-foreground uppercase tracking-wider">
+              <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">
                 {stat.label}
               </div>
             </motion.div>
