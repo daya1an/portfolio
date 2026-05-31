@@ -1,19 +1,20 @@
 export const profileData = {
-  name: "Dayalan D.S.",
-  role: "Development Engineer | Full Stack & AI Builder",
-  tagline: "Software Engineer specializing in full-stack development across distributed systems, cloud infrastructure, and AI/ML integration",
-  greeting: "HELLO WORLD_",
+  name: "Dayalan D.S.", //
+  role: "Java Full-Stack | AI Integration & Big Data | Cloud Architecture",
+  tagline:
+    "Software Engineer with nearly 3 years of experience architecting distributed microservices, building RAG-based AI pipelines, and scaling cloud-native enterprise systems.",
+  greeting: "HELLO WORLD! ",
   bio: [
-    "Software Engineer with 2.5+ years of experience specializing in full-stack development across distributed systems. Strong foundation in backend development with Java Spring Boot, frontend development with React and Angular, and AI/ML integration.",
-    "Proficient in REST APIs, job schedulers, messaging systems, RDBMS, cloud infrastructure and DevOps tools. Experienced in OOD, SOLID principles, data structures, and algorithms with proven experience in high-throughput systems.",
-    "Passionate about building mission-critical systems that serve millions of users. From architecting microservices to crafting responsive interfaces, I thrive on turning complex problems into elegant, performant solutions.",
+    "Full-stack Software Engineer with nearly 3 years of experience building production-grade microservices using Java 17+, Spring Boot, and React. Strong foundation in designing high-throughput backends and modernizing legacy applications into robust, event-driven cloud platforms.",
+    "Specialized in AI/ML integration and Big Data, with hands-on expertise building LLM agents, RAG pipelines using Spring AI, and managing data operations with Kafka, Redis, and vector databases like MongoDB. Proficient in optimizing REST and GraphQL APIs to eliminate data bottlenecks and reduce latency in mission-critical environments.[cite: 1]",
+    "Passionate about developing scalable, AI-powered products and resilient backend architectures.[cite: 1] With hands-on experience building complex data lakehouses and financial ledger systems, I am highly motivated to drive technical innovation across domains like logistics, e-commerce, and the fintech sector.[cite: 1]",
   ],
   stats: [
-    { label: "Years Exp", value: "2.5+" },
-    { label: "Technologies", value: "25+" },
-    { label: "Domains", value: "B2B/B2C" },
-    { label: "Cloud", value: "GCP/AWS" },
+    { label: "Years of Experience", value: "Three" }, //[cite: 1]
+    { label: "Core Tech", value: "Java, Spring, React/Angular, GCP" }, //[cite: 1]
+    { label: "Domains", value: " Logistics, Fintech, E-Commerce" }, //[cite: 1]
+    { label: "Data & AI", value: "Kafka, BigQuery, Spring AI" }, //[cite: 1]
   ],
   resumeUrl: "#",
-  avatarUrl: "",
+  avatarUrl: "assets/profile-picture.png",
 };

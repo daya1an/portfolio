@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import SectionContainer from "./gaming-ui/SectionContainer";
 import { profileData } from "../data/profile";
 
+const getAdaptiveFontSize = (text: string) => {
+  const length = text.length;
+  const size = 2.5 - length * 0.03;
+  return `${Math.max(1.25, Math.min(2.25, size))}rem`;
+};
+
 const About: React.FC = () => {
   return (
     <SectionContainer id="about" title="About" subtitle="A bit about me and what I do.">
@@ -32,7 +38,10 @@ const About: React.FC = () => {
               transition={{ delay: i * 0.08, duration: 0.35 }}
               className="border border-border rounded-lg p-5 text-center hover:bg-muted/50 transition-colors duration-300"
             >
-              <div className="text-2xl md:text-3xl font-bold text-foreground mb-1">
+              <div
+                style={{ fontSize: getAdaptiveFontSize(stat.value) }}
+                className="font-bold text-foreground mb-1 break-words"
+              >
                 {stat.value}
               </div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">

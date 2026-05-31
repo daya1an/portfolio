@@ -8,7 +8,7 @@ import { Tag } from "primereact/tag";
 
 const Projects: React.FC = () => {
   return (
-    <SectionContainer id="projects" title="Projects" subtitle="Selected work and side projects.">
+    <SectionContainer id="projects" title="Personal Projects" subtitle="Personal and side projects.">
       <div className="grid md:grid-cols-2 gap-6">
         {projectsData.map((project, i) => (
           <motion.div

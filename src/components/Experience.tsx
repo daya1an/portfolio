@@ -49,7 +49,7 @@ const Experience: React.FC = () => {
   );
 
   return (
-    <SectionContainer id="experience" title="Experience" subtitle="Career progression and key roles.">
+    <SectionContainer id="experience" title="Career" subtitle="Career progression and key roles.">
       <div className="hidden md:block">
         <Timeline
           value={experienceData.map((item, index) => ({ ...item, _index: index }))}

@@ -32,8 +32,8 @@ export const achievementsData: Achievement[] = [
   },
   {
     title: "B.E. Information Science & Engineering",
-    description: "Kumaraguru College of Technology, Coimbatore, Tamil Nadu",
-    icon: "medal",
+    description: "Graduated with First Class with Distinction, earned the Mahatma Gandhi Merit Scholarship in all four academic years, and built a Blood Donors & Blood Banks Tracking Application that was published at the 2023 2nd ICAECA Conference.",
+    icon: "trophy",
     year: "2023",
   },
 ];

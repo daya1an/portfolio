@@ -11,27 +11,30 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     title: "GenAI REST Service",
-    description: "A Spring Boot REST API using Spring AI with Gemini-2.5 Flash model, delivering multiple configurable AI use cases with enterprise-grade reliability.",
+    description: "A production-grade Spring Boot REST API integrating Google Gemini 2.5 Flash across seven AI use cases (text generation, summarization, Q&A, translation, code generation, analysis, and chat). Built with Redis caching, MySQL persistence, AOP-based audit logging, Resilience4j circuit breakers, rate limiting, input sanitization, and Prometheus metrics.",
     tech: ["Spring Boot", "Spring AI", "Gemini", "Redis", "Resilience4j", "Prometheus"],
     featured: true,
-    githubUrl: "https://github.com/daya1an",
+    githubUrl: "https://github.com/daya1an/spring-genai",
   },
   {
-    title: "Microservices Platform",
-    description: "Distributed microservices architecture with API Gateway, Circuit Breaker, and Saga patterns for high-throughput enterprise systems at Ford.",
-    tech: ["Spring Boot", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes"],
+    title: "ECOMMERCE MEDALLION LAKEHOUSE",
+    description: "An ecommerce data engineering project on Databricks using the Medallion Architecture (Bronze → Silver → Gold). Raw CSV data across brands, products, customers, calendar, and order items is ingested and transformed across layered PySpark notebooks, producing BI-ready Delta tables with derived metrics (FX conversion, region enrichment, coupon flags).",
+    tech: ["Python", "Pyspark", "Databricks", "AWS S3", "Power BI"],
     featured: true,
+    githubUrl: "https://github.com/daya1an/ecommerce-medallion-lakehouse"
   },
   {
-    title: "Cloud-Native Deployment Pipeline",
-    description: "End-to-end CI/CD pipeline with Terraform IaC, Jenkins/Tekton, and GCP services including Cloud Run, BigQuery, and Pub/Sub.",
-    tech: ["GCP", "Terraform", "Jenkins", "Docker", "OpenShift"],
+    title: "Sentiment Ledger",
+    description: "An AI-powered invoice approval system built with Spring Boot and Google Gemini. Invoices are submitted via a REST API, processed asynchronously through Kafka, and evaluated against company financial policies using RAG on MongoDB Atlas Vector Store. Decisions are recorded in an immutable audit ledger with idempotency guarantees.",
+    tech: ["Spring Boot", "Spring AI", "Google Gemini", "RAG", "KAFKA", "MongoDB Atlas"],
     featured: false,
+    githubUrl: "https://github.com/daya1an/sentiment-ledger"
   },
   {
-    title: "Real-Time Search Engine",
-    description: "High-performance search feature using Elasticsearch with custom analyzers and aggregations for bulk data retrieval across microservices.",
-    tech: ["Elasticsearch", "Spring Boot", "React", "TypeScript"],
+    title: "My Portfolio Website",
+    description: "My personal portfolio is a fast, modern platform built to showcase my professional career, accelerated through vibe-coding with Lovable. Powered by React, TypeScript, Vite, Bun, Tailwind, and PrimeReact, it features a decoupled architecture where all content is isolated in src/data/ for effortless updates. The design merges a sleek, minimalistic black-and-white layout with custom minimalistic accents, delivering a unique yet professional outlook and   experience.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "PrimeReact"],
     featured: true,
+    githubUrl: "https://github.com/daya1an/my-portfolio-website"
   },
 ];

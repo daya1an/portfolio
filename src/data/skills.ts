@@ -12,7 +12,7 @@ export interface SkillCategory {
 export const skillsData: { categories: SkillCategory[] } = {
   categories: [
     {
-      name: "Languages",
+      name: "Programming Languages",
       skills: [
         { name: "Java", icon: "auto", level: 95 },
         { name: "Python", icon: "auto", level: 85 },
@@ -33,50 +33,59 @@ export const skillsData: { categories: SkillCategory[] } = {
       ],
     },
     {
-      name: "Backend & Frameworks",
+      name: "Backend",
       skills: [
-        { name: "Spring Boot", icon: "auto", level: 95 },
-        { name: "Node.js", icon: "auto", level: 80 },
-        { name: "Hibernate", icon: "auto", level: 88 },
-        { name: "GraphQL", icon: "auto", level: 75 },
+        { name: "Spring Framework", icon: "assets/icons/spring-framework.svg", level: 80 },
+        { name: "Spring Boot", icon: "assets/icons/spring-boot.svg", level: 95 },
+        { name: "Spring Batch", icon: "assets/icons/spring-batch.svg", level: 88 },
+        { name: "Spring Data", icon: "assets/icons/spring-data.svg", level: 88 },
+        { name: "Spring Security", icon: "assets/icons/spring-security.svg", level: 80 },
+        { name: "GraphQL", icon: "assets/icons/spring-graphql.svg", level: 75 },
       ],
     },
     {
-      name: "Cloud & DevOps",
+
+      name: "Cloud and Other Platforms",
       skills: [
         { name: "GCP", icon: "auto", level: 85 },
-        { name: "AWS", icon: "auto", level: 75 },
-        { name: "Docker", icon: "auto", level: 85 },
+        { name: "AWS", icon: "assets/icons/aws-logo.jpg", level: 75 },
         { name: "Kubernetes", icon: "auto", level: 78 },
-        { name: "Terraform", icon: "auto", level: 75 },
-        { name: "Jenkins", icon: "auto", level: 80 },
-        { name: "GitHub Actions", icon: "auto", level: 82 },
+        { name: "OpenShift", icon: "assets/icons/openshift.jpg", level: 78 },
+        { name: "Kafka", icon: "assets/icons/kafka.webp", level: 82 },
+        { name: "Redis", icon: "auto", level: 80 },
+        { name: "Databricks", icon: "assets/icons/databricks.png", level: 80 },
       ],
     },
     {
       name: "Databases",
       skills: [
         { name: "PostgreSQL", icon: "auto", level: 88 },
-        { name: "MongoDB", icon: "auto", level: 82 },
-        { name: "Redis", icon: "auto", level: 80 },
-        { name: "MySQL", icon: "auto", level: 85 },
+        { name: "Microsoft SQL Server", icon: "assets/icons/SQLServerManagementStudiologo.png", level: 85 },        
         { name: "Oracle", icon: "auto", level: 78 },
+        { name: "MySQL", icon: "auto", level: 85 },
+        { name: "MongoDB", icon: "auto", level: 82 },
+        { name: "BigQuery", icon: "assets/icons/bigquery.png", level: 80 },
       ],
     },
     {
-      name: "Tools & Middleware",
+      name: "DevSecOps and Tools",
       skills: [
-        { name: "Kafka", icon: "auto", level: 82 },
         { name: "Git", icon: "auto", level: 92 },
         { name: "Jira", icon: "auto", level: 80 },
-        { name: "Elasticsearch", icon: "auto", level: 75 },
+        { name: "Docker", icon: "auto", level: 85 },        
+        { name: "Splunk", icon: "assets/icons/Splunk-Emblem.png", level: 80 },
+        { name: "Dynatrace", icon: "assets/icons/dynatrace-icon.webp", level: 80 },
+        { name: "Terraform", icon: "auto", level: 75 },
+        { name: "Jenkins", icon: "auto", level: 80 },
+        { name: "GitHub Actions", icon: "auto", level: 82 }
       ],
     },
     {
       name: "AI / ML",
       skills: [
-        { name: "Spring AI", icon: "auto", level: 80 },
-        { name: "LangChain", icon: "auto", level: 75 },
+        { name: "Spring AI", icon: "assets/icons/spring-ai.svg", level: 80 },
+        { name: "LangChain", icon: "assets/icons/langchain-icon.png", level: 75 },
+        { name: "LangGraph", icon: "assets/icons/langgraph-color.svg", level: 75 },
         { name: "Scikit-Learn", icon: "auto", level: 70 },
       ],
     },

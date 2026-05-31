@@ -44,13 +44,21 @@ const Hero: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
             <button
-              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200"
             >
               View Projects
             </button>
             <button
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="px-6 py-3 text-sm font-medium border border-border text-foreground rounded-md hover:bg-muted transition-colors duration-200"
             >
               Contact Me
@@ -61,13 +69,42 @@ const Hero: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+          transition={{
+            duration: 0.6,
+            delay: 0.15,
+            ease: [0.25, 0.46, 0.45, 0.94],
+          }}
           className="relative"
         >
-          <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-muted border border-border flex items-center justify-center">
-            <span className="text-4xl md:text-5xl font-bold text-foreground">
-              {profileData.name.split(" ").map(n => n[0]).join("")}
-            </span>
+          {/* Animated glow/ring effect */}
+          <motion.div
+            className="absolute inset-0 rounded-full bg-gradient-to-r from-foreground/20 via-transparent to-foreground/20"
+            animate={{
+              opacity: [0.3, 0.6, 0.3],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+
+          {/* Main image container */}
+          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-muted flex items-center justify-center overflow-hidden">
+            {profileData.avatarUrl ? (
+              <img
+                src={profileData.avatarUrl}
+                alt={profileData.name}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <span className="text-5xl md:text-6xl font-bold text-foreground">
+                {profileData.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
+              </span>
+            )}
           </div>
         </motion.div>
       </div>
@@ -78,7 +115,10 @@ const Hero: React.FC = () => {
         transition={{ delay: 1.2 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >
-        <a href="#about" className="flex flex-col items-center text-muted-foreground hover:text-foreground transition-colors duration-200">
+        <a
+          href="#about"
+          className="flex flex-col items-center text-muted-foreground hover:text-foreground transition-colors duration-200"
+        >
           <span className="text-xs mb-2 font-medium">Scroll</span>
           <ArrowDown size={14} />
         </a>

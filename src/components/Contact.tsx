@@ -4,13 +4,45 @@ import SectionContainer from "./gaming-ui/SectionContainer";
 import { contactData } from "../data/social";
 import { Send } from "lucide-react";
 import { Button } from "primereact/button";
+import emailjs from "emailjs-com";
+
+// Initialize EmailJS (get your Public Key from emailjs.com)
+emailjs.init("YOUR_PUBLIC_KEY_HERE");
 
 const Contact: React.FC = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:${contactData.email}?subject=Portfolio Contact from ${form.name}&body=${form.message}`;
+    setLoading(true);
+    setStatus("idle");
+
+    const templateParams = {
+      to_email: "dayalands2210@gmail.com",
+      from_name: form.name,
+      from_email: form.email,
+      message: form.message,
+      reply_to: form.email,
+    };
+
+    try {
+      await emailjs.send(
+        "YOUR_SERVICE_ID_HERE",
+        "YOUR_TEMPLATE_ID_HERE",
+        templateParams
+      );
+      setStatus("success");
+      setForm({ name: "", email: "", message: "" });
+      setTimeout(() => setStatus("idle"), 3000);
+    } catch (error) {
+      console.error("Email send failed:", error);
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -51,11 +83,22 @@ const Contact: React.FC = () => {
         />
         <button
           type="submit"
-          className="w-full flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200"
+            disabled={loading}
+            className="w-full flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <Send size={14} />
-          {contactData.ctaText}
+            {loading ? "Sending..." : contactData.ctaText}
         </button>
+          {status === "success" && (
+            <div className="text-green-500 text-center text-sm font-medium">
+              ✓ Message sent successfully!
+            </div>
+          )}
+          {status === "error" && (
+            <div className="text-red-500 text-center text-sm font-medium">
+              ✗ Failed to send message. Please try again.
+            </div>
+          )}
       </motion.form>
     </SectionContainer>
   );

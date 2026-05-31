@@ -4,7 +4,7 @@ export const socialData = {
     { platform: "LinkedIn", url: "https://linkedin.com/in/dayalands", icon: "linkedin" },
     { platform: "Email", url: "mailto:dayalands2210@gmail.com", icon: "mail" },
   ],
-  gamerTag: "DAYA1AN",
+  gamerTag: "DAYALAN D S",
   discord: "",
 };
 
