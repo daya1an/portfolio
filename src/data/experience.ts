@@ -29,9 +29,32 @@ export const experienceData: Experience[] = [
       "Kafka",
       "PostgreSQL",
       "MongoDB",
-      "Batch Processing ",
-    ], //
+      "Batch Processing",
+    ],
     level: 5,
+  },
+  {
+    title: "Cloud Architecture & DevOps",
+    company: "Ford Motor Company",
+    period: "Jul 2023 — Present",
+    description:
+      "Provisioning cloud infrastructure, securing API gateways, and establishing seamless CI/CD pipelines.",
+    highlights: [
+      "Provisioned CI/CD pipelines with GitHub Actions & Tekton and deployed applications in GCP Cloud Run, managed by Terraform IaC.",
+      "Migrated Legacy applications's Message Queues from RabbitMQ & IBM MQ to GCP Pub/Sub and Apache Kafka, improving scalability and eliminating single-broker bottlenecks.",
+      "Managed from PCF to Red Hat OpenShift deployments and CronJobs, optimizing cost while ensuring Kyverno policy compliance.",
+      "Architected secure API access via Apigee API Gateway and solved file transfer limitations using GCS signed URLs.",
+    ],
+    tech: [
+      "GCP",
+      "OpenShift",
+      "Terraform",
+      "GitHub Actions",
+      "Docker",
+      "Kubernetes",
+      "Apigee",
+    ],
+    level: 3,
   },
   {
     title: "Frontend Development",
@@ -44,65 +67,57 @@ export const experienceData: Experience[] = [
       "Developed performant React data tables with virtualized rendering to handle 10K+ row datasets without pagination overhead.",
       "Created Angular UI components incorporating lazy loading, breadcrumb navigation, and authorization strategies.",
     ],
-    tech: ["React", "Angular", "Redux", "Tailwind CSS", "TypeScript", "Jest"], //
+    tech: ["React", "Angular", "Redux", "Tailwind CSS", "TypeScript", "Jest"],
     level: 4,
-  },
-  {
-    title: "Cloud Architecture & DevOps",
-    company: "Ford Motor Company",
-    period: "Jul 2023 — Present",
-    description:
-      "Provisioning cloud infrastructure, securing API gateways, and establishing seamless CI/CD pipelines.",
-    highlights: [
-      "Provisioned CI/CD pipelines with GitHub Actions and deployed applications in GCP Cloud Run, managed by Terraform IaC.",
-      "Migrated batch jobs from RabbitMQ to GCP Pub/Sub, improving scalability and eliminating single-broker bottlenecks.",
-      "Managed Red Hat OpenShift deployments and CronJobs, optimizing cost while ensuring Kyverno policy compliance.",
-      "Architected secure API access via Apigee API Gateway and solved file transfer limitations using GCS signed URLs.",
-    ],
-    tech: [
-      "GCP",
-      "OpenShift",
-      "Terraform",
-      "GitHub Actions",
-      "Docker",
-      "Kubernetes",
-      "Apigee",
-    ], //
-    level: 3,
-  },
-  {
-    title: "AI Integration & Data Engineering",
-    company: "Independent Projects",
-    period: "2023 — Present",
-    description:
-      "Designing AI-driven financial ledger solutions and scalable data lakehouses for modern enterprise backends.",
-    highlights: [
-      "Engineered an AI-driven financial ledger using Spring AI, integrating Apache Kafka for real-time payment event streaming.",
-      "Built a RAG pipeline utilizing Gemini and MongoDB Atlas vector data to automate LLM-based invoice processing and decision-making.",
-      "Designed an E-Commerce Data Lakehouse on Databricks using a Medallion architecture for multi-hop data transformation.",
-      "Modeled denormalized dimensional data to power interactive business dashboards and real-time analytics.",
-    ],
-    tech: [
-      "Spring AI",
-      "RAG",
-      "Gemini",
-      "Databricks",
-      "Kafka",
-      "MongoDB Atlas",
-    ], //
-    level: 2,
   },
   {
     title: "B.E. Information Science & Engineering",
     company: "Kumaraguru College of Technology",
     period: "2019 — 2023",
-    description:"",
+    description: "",
     highlights: [
       "Graduated with First Class with Distinction, recognition of outstanding performance.",
       "Awarded the Mahatma Gandhi Merit Scholarship for four consecutive years in demonstrating consistent academic excellence.",
-      "Developed a Blood Donors & Blood Banks Tracking Application as a final‑year project, which was successfully published at the 2023 2nd ICAECA Conference."
+      "Developed a Blood Donors & Blood Banks Tracking Application as a final-year project, which was successfully published at the 2023 2nd ICAECA Conference.",
     ],
-    tech: ["Java", "Python", "Data Structures", "Algorithms", "OOPs", "DBMS", "MERN Stack", "Tableau", "Machine Learning"], //
+    tech: [
+      "Java",
+      "Python",
+      "Data Structures",
+      "Algorithms",
+      "OOPs",
+      "DBMS",
+      "MERN Stack",
+      "Tableau",
+      "Machine Learning",
+    ],
     level: 1,
+  },
+  {
+    title: "Observability & Security",
+    company: "Ford Motor Company",
+    period: "Jul 2023 — Present",
+    description:
+      "Embedding production-grade observability, secret management, and policy enforcement across enterprise Kubernetes workloads.",
+    highlights: [
+      "Integrated Splunk and Dynatrace via sidecar containers for real-time log aggregation and APM across OpenShift deployments.",
+      "Provisioned GCP Secret Manager via Python-based init containers, eliminating hardcoded credential risks.",
+      "Enforced Kyverno admission policies across all OpenShift CronJob and batch deployments to ensure cluster compliance.",
+      "Authored enterprise Kubernetes docs covering CronJob scheduling, SSL/DNS mapping, and alerting rules.",
+      "Configured ADFS and Entra ID-based authentication flows with Redis-backed JWT caching for stateless and high-performance authentication.",
+      "Established Apigee API Gateway for SAP and Mainframe-consumed APIs with rate limiting and security policy enforcement.",
+    ],
+    tech: [
+      "Splunk",
+      "Dynatrace",
+      "Kyverno",
+      "GCP Secret Manager",
+      "Kubernetes",
+      "ADFS",
+      "Entra ID",
+      "Apigee",
+      "Redis",
+    ],
+    level: 3,
   },
 ];
