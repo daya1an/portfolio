@@ -5,6 +5,7 @@ export const navigationData = {
     { label: "ABOUT", href: "#about" },
     { label: "SKILLS", href: "#skills" },
     { label: "EXPERIENCE", href: "#experience" },
+    { label: "EDUCATION", href: "#education" },
     { label: "PROJECTS", href: "#projects" },
     { label: "ACHIEVEMENTS", href: "#achievements" },
     { label: "CONTACT", href: "#contact" },
