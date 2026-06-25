@@ -1,11 +1,12 @@
 import React from "react";
 import { socialData } from "../data/social";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, Instagram } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   github: Github,
   linkedin: Linkedin,
   twitter: Twitter,
+  instagram: Instagram,
   mail: Mail,
 };
 
