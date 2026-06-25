@@ -35,12 +35,12 @@ export const skillsData: { categories: SkillCategory[] } = {
     {
       name: "Backend",
       skills: [
-        { name: "Spring Framework", icon: "assets/icons/spring-framework.svg", level: 80 },
-        { name: "Spring Boot", icon: "assets/icons/spring-boot.svg", level: 95 },
-        { name: "Spring Batch", icon: "assets/icons/spring-batch.svg", level: 88 },
-        { name: "Spring Data", icon: "assets/icons/spring-data.svg", level: 88 },
-        { name: "Spring Security", icon: "assets/icons/spring-security.svg", level: 80 },
-        { name: "GraphQL", icon: "assets/icons/spring-graphql.svg", level: 75 },
+        { name: "Spring Framework", icon: "/icons/spring-framework.svg", level: 80 },
+        { name: "Spring Boot", icon: "/icons/spring-boot.svg", level: 95 },
+        { name: "Spring Batch", icon: "/icons/spring-batch.svg", level: 88 },
+        { name: "Spring Data", icon: "/icons/spring-data.svg", level: 88 },
+        { name: "Spring Security", icon: "/icons/spring-security.svg", level: 80 },
+        { name: "GraphQL", icon: "/icons/spring-graphql.svg", level: 75 },
       ],
     },
     {
@@ -48,23 +48,23 @@ export const skillsData: { categories: SkillCategory[] } = {
       name: "Cloud and Other Platforms",
       skills: [
         { name: "GCP", icon: "auto", level: 85 },
-        { name: "AWS", icon: "assets/icons/aws-logo.jpg", level: 75 },
+        { name: "AWS", icon: "/icons/aws-logo.jpg", level: 75 },
         { name: "Kubernetes", icon: "auto", level: 78 },
-        { name: "OpenShift", icon: "assets/icons/openshift.jpg", level: 78 },
-        { name: "Kafka", icon: "assets/icons/kafka.webp", level: 82 },
+        { name: "OpenShift", icon: "/icons/openshift.jpg", level: 78 },
+        { name: "Kafka", icon: "/icons/kafka.webp", level: 82 },
         { name: "Redis", icon: "auto", level: 80 },
-        { name: "Databricks", icon: "assets/icons/databricks.png", level: 80 },
+        { name: "Databricks", icon: "/icons/databricks.png", level: 80 },
       ],
     },
     {
       name: "Databases",
       skills: [
         { name: "PostgreSQL", icon: "auto", level: 88 },
-        { name: "Microsoft SQL Server", icon: "assets/icons/SQLServerManagementStudiologo.png", level: 85 },        
+        { name: "Microsoft SQL Server", icon: "/icons/SQLServerManagementStudiologo.png", level: 85 },        
         { name: "Oracle", icon: "auto", level: 78 },
         { name: "MySQL", icon: "auto", level: 85 },
         { name: "MongoDB", icon: "auto", level: 82 },
-        { name: "BigQuery", icon: "assets/icons/bigquery.png", level: 80 },
+        { name: "BigQuery", icon: "/icons/bigquery.png", level: 80 },
       ],
     },
     {
@@ -73,8 +73,8 @@ export const skillsData: { categories: SkillCategory[] } = {
         { name: "Git", icon: "auto", level: 92 },
         { name: "Jira", icon: "auto", level: 80 },
         { name: "Docker", icon: "auto", level: 85 },        
-        { name: "Splunk", icon: "assets/icons/Splunk-Emblem.png", level: 80 },
-        { name: "Dynatrace", icon: "assets/icons/dynatrace-icon.webp", level: 80 },
+        { name: "Splunk", icon: "/icons/Splunk-Emblem.png", level: 80 },
+        { name: "Dynatrace", icon: "/icons/dynatrace-icon.webp", level: 80 },
         { name: "Terraform", icon: "auto", level: 75 },
         { name: "Jenkins", icon: "auto", level: 80 },
         { name: "GitHub Actions", icon: "auto", level: 82 }
@@ -83,9 +83,9 @@ export const skillsData: { categories: SkillCategory[] } = {
     {
       name: "AI / ML",
       skills: [
-        { name: "Spring AI", icon: "assets/icons/spring-ai.svg", level: 80 },
-        { name: "LangChain", icon: "assets/icons/langchain-icon.png", level: 75 },
-        { name: "LangGraph", icon: "assets/icons/langgraph-color.svg", level: 75 },
+        { name: "Spring AI", icon: "/icons/spring-ai.svg", level: 80 },
+        { name: "LangChain", icon: "/icons/langchain-icon.png", level: 75 },
+        { name: "LangGraph", icon: "/icons/langgraph-color.svg", level: 75 },
         { name: "Scikit-Learn", icon: "auto", level: 70 },
       ],
     },
