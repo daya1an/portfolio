@@ -13,7 +13,7 @@ export const profileData = {
     { label: "Years of Experience", value: "Three" }, //[cite: 1]
     { label: "Core Tech", value: "Java, Spring, React/Angular, GCP" }, //[cite: 1]
     { label: "Domains", value: " Logistics, Fintech, E-Commerce" }, //[cite: 1]
-    { label: "Data & AI", value: "Kafka, BigQuery, Spring AI" }, //[cite: 1]
+    { label: "Data & AI", value: "Pub/Sub, BigQuery, Spring AI" }, //[cite: 1]
   ],
   resumeUrl: "#",
   avatarUrl: "https://raw.githubusercontent.com/daya1an/portfolio/main/assets/profile-picture.png",

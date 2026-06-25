@@ -3,45 +3,42 @@ import { motion } from "framer-motion";
 import SectionContainer from "./gaming-ui/SectionContainer";
 import { contactData } from "../data/social";
 import { Send } from "lucide-react";
-import { Button } from "primereact/button";
-import emailjs from "emailjs-com";
-
-// Initialize EmailJS (get your Public Key from emailjs.com)
-emailjs.init("YOUR_PUBLIC_KEY_HERE");
 
 const Contact: React.FC = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setStatus("idle");
 
-    const templateParams = {
-      to_email: "dayalands2210@gmail.com",
-      from_name: form.name,
-      from_email: form.email,
-      message: form.message,
-      reply_to: form.email,
-    };
+    const formElement = e.currentTarget;
+    const formData = new FormData(formElement);
+    formData.append("access_key", "5266a37d-e055-4664-82dc-06af15183f2b");
 
     try {
-      await emailjs.send(
-        "YOUR_SERVICE_ID_HERE",
-        "YOUR_TEMPLATE_ID_HERE",
-        templateParams
-      );
-      setStatus("success");
-      setForm({ name: "", email: "", message: "" });
-      setTimeout(() => setStatus("idle"), 3000);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("success");
+        setForm({ name: "", email: "", message: "" });
+        formElement.reset();
+      } else {
+        throw new Error(data?.message || "Unable to send message");
+      }
     } catch (error) {
-      console.error("Email send failed:", error);
+      console.error("Contact form submission failed:", error);
       setStatus("error");
-      setTimeout(() => setStatus("idle"), 3000);
     } finally {
       setLoading(false);
+      setTimeout(() => setStatus("idle"), 3000);
     }
   };
 
@@ -58,6 +55,7 @@ const Contact: React.FC = () => {
         <div className="grid sm:grid-cols-2 gap-4">
           <input
             type="text"
+            name="name"
             placeholder="Name"
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -66,6 +64,7 @@ const Contact: React.FC = () => {
           />
           <input
             type="email"
+            name="email"
             placeholder="Email"
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -74,6 +73,7 @@ const Contact: React.FC = () => {
           />
         </div>
         <textarea
+          name="message"
           placeholder="Your message..."
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}

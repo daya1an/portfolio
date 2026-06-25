@@ -9,7 +9,7 @@ const Skills: React.FC = () => {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   return (
-    <SectionContainer id="skills" title="Skills" subtitle="Technologies & tools I work with.">
+    <SectionContainer id="skills" title="Technical Skills" subtitle="Technologies & tools I work with. (Touch/Hover for details)">
       <div className="space-y-10">
         {skillsData.categories.map((category, catIdx) => (
           <motion.div

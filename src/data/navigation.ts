@@ -7,7 +7,7 @@ export const navigationData = {
     { label: "EXPERIENCE", href: "#experience" },
     { label: "EDUCATION", href: "#education" },
     { label: "PROJECTS", href: "#projects" },
-    { label: "ACHIEVEMENTS", href: "#achievements" },
+    // { label: "ACHIEVEMENTS", href: "#achievements" },
     { label: "CONTACT", href: "#contact" },
   ],
 };

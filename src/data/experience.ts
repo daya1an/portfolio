@@ -17,7 +17,7 @@ export const experienceData: Experience[] = [
       "Base - Mainframe application, Functioning as SPOC for the Modernized Part of this Application",
     highlights: [
       "Developing APIs serving 25+ apps, supporting enterprise reporting infrastructure and audit requirements at sub-100ms latency.",
-      "Maintaining batch data jobs processing millions of records daily, transforming and transferring data via SFTP to downstream applications.",
+      "Maintaining batch processing applications, processing millions of records daily, by periodically pulling differnet formats of data from enterprise platforms into GCS, transforming it into differnt format, and transferring it via SFTP.",
       "Migrated 10 REST endpoints to GraphQL over BigQuery, reducing payload size for downstream applications by eliminating over-fetching.",
       "Optimized Bigquery stored procedures, reducing ETL job execution time by 35% and eliminating data reconciliation errors.",
       "Deployed workloads on GCP Cloud Run, configured Cloud Scheduler for daily batch processing and provisioned APIGEE for API with robust security measures.",
