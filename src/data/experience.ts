@@ -23,16 +23,7 @@ export const experienceData: Experience[] = [
       "Deployed workloads on GCP Cloud Run, configured Cloud Scheduler for daily batch processing and provisioned APIGEE for API with robust security measures.",
     ],
     tech: [
-      "React",
-      "Redux",
-      "TypeScript",
-      "Spring",
-      "GraphQL",
-      "IBM DB2",
-      "PostgreSQL",
-      "GCP",
-      "Batch Processing",
-    ],
+      "React","Redux","TypeScript","Spring","GraphQL","IBM DB2","PostgreSQL","GCP","Batch Processing"],
     level: 5,
   },
   {
@@ -83,18 +74,7 @@ export const experienceData: Experience[] = [
       "Led CI/CD migration from Tekton to GitHub Actions, improving deployment reliability and reducing deployment time by 60%.",
       "Conducted peer code reviews, implemented robust test cases, and enhanced coding standards by remediating vulnerabilities flagged by SAST tools (SonarQube, Fossa, Cycode)."
     ],
-    tech: [
-      "Angular",
-      "TypeScript",
-      "PrimeNG",
-      "Spring",
-      "PostgreSQL",
-      "GCP",
-      "Entra ID",
-      "Pub/Sub",
-      "Redis",
-      "GitHub Actions"
-    ],
+    tech: ["Angular","TypeScript","PrimeNG","Spring","PostgreSQL","GCP","Entra ID","Pub/Sub","Redis","GitHub Actions"],
     level: 2,
   },
   {
@@ -112,19 +92,7 @@ export const experienceData: Experience[] = [
       "Led reverse KT sessions, mentoring team members on CronJob scheduling, SSL/DNS mapping, and alerts and rules for batch APIs.",
       "Managed OpenShift CronJob deployments for batch jobs, optimizing cost and performance while ensuring Kyverno policy compliance."
     ],
-    tech: [
-      "Java",
-      "Struts",
-      "WAS Liberty",
-      "Spring",
-      "MS SQL Server",
-      "IBM DB2",
-      "AWS",
-      "Red Hat OpenShift",
-      "ADFS",
-      "JFrog",
-      "Tekton"
-    ],
+    tech: ["Java","Struts","WAS Liberty","Spring","MS SQL Server","IBM DB2","AWS","Red Hat OpenShift","ADFS","JFrog", "Tekton", "Batch Processing"],
     level: 1,
   },
 ];
