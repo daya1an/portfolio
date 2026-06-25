@@ -1,6 +1,6 @@
 export const profileData = {
   name: "Dayalan D.S.", //
-  role: "Java Full-Stack | AI Integration & Big Data | Cloud Architecture",
+  role: "Java ​Full Stack  • Spring  •  Microservices  •  React & Angular  •  GCP & OpenShift  •  DevSecOps •  AI/ML Integration  •  Big Data ",
   tagline:
     "Software Engineer with nearly 3 years of experience architecting distributed microservices, building RAG-based AI pipelines, and scaling cloud-native enterprise systems.",
   greeting: "HELLO WORLD! ",
