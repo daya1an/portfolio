@@ -16,5 +16,5 @@ export const profileData = {
     { label: "Data & AI", value: "Kafka, BigQuery, Spring AI" }, //[cite: 1]
   ],
   resumeUrl: "#",
-  avatarUrl: "assets/profile-picture.png",
+  avatarUrl: "https://raw.githubusercontent.com/daya1an/my-portfolio-website/main/assets/profile-picture.png",
 };

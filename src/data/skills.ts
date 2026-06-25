@@ -103,7 +103,7 @@ const deviconMap: Record<string, string> = {
   "Python": "python.svg",
   "TypeScript": "typescript.svg",
   "JavaScript": "javascript.svg",
-  "SQL": "azuresqldatabase.svg",
+  "SQL": "sql.svg",
   "C/C++": "cplusplus.svg",
 
   "React": "react.svg",
@@ -122,8 +122,8 @@ const deviconMap: Record<string, string> = {
   "RestFUL API": "restapi.svg",
   "GraphQL": "graphql.svg",
 
-  "GCP": "googlecloud.svg",
-  "AWS": "aws.svg",
+  "GCP": "gcp.svg",
+  "AWS": "AWS.svg",
   "Kubernetes": "kubernetes.svg",
   "OpenShift": "openshift.svg",
   "Kafka": "kafka.svg",
