@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { profileData } from "../data/profile";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download, Mail } from "lucide-react";
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
@@ -43,25 +43,26 @@ const Hero: React.FC = () => {
             {profileData.tagline}
           </p>
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-            <button
-              onClick={() =>
-                document
-                  .getElementById("projects")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-              className="px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200"
+            <a
+              href="https://raw.githubusercontent.com/daya1an/portfolio/main/assets/Dayalan%20D%20S%20Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200"
             >
-              View Projects
-            </button>
+              <Download size={16} />
+              <span>Download Resume</span>
+            </a>
             <button
               onClick={() =>
                 document
                   .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="px-6 py-3 text-sm font-medium border border-border text-foreground rounded-md hover:bg-muted transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium border border-border text-foreground rounded-md hover:bg-muted transition-colors duration-200"
             >
-              Contact Me
+              <Mail size={16} />
+              <span>Contact Me</span>
             </button>
           </div>
         </motion.div>

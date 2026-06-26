@@ -19,8 +19,7 @@ export const educationData: EducationItem[] = [
     highlights: [
       "Graduated with First Class with Distinction, recognition of outstanding performance",
       "Awarded the Mahatma Gandhi Merit Scholarship for four consecutive years in demonstrating consistent academic excellence.",
-      "Developed a Blood Donors & Blood Banks Tracking Application as a final-year project, which was successfully published at the 2023 2nd ICAECA Conference.",
-      "Worked on a final-year project for blood donor and blood bank tracking, which was published at the 2023 2nd ICAECA Conference.",
+      "Built Blood Donors & Blood Banks Tracking Application as a final-year project, which was successfully published at the 2023 2nd ICAECA Conference.",
       "Developed a strong foundation in DSA, OOPS, Computer Networks, DBMS, Cyrptography, Data Analytics and Data Science, with Software Engineering principles.",
     ],
     honors: [

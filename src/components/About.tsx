@@ -21,7 +21,7 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="text-muted-foreground leading-relaxed"
+              className="text-muted-foreground leading-relaxed text-justify"
             >
               {paragraph}
             </motion.p>
