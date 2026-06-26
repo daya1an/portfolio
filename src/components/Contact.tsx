@@ -9,6 +9,11 @@ const Contact: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
+  const isFormValid =
+    form.name.trim().length >= 4 &&
+    form.email.trim().length >= 4 &&
+    form.message.trim().length >= 4;
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
@@ -83,11 +88,11 @@ const Contact: React.FC = () => {
         />
         <button
           type="submit"
-            disabled={loading}
-            className="w-full flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled={loading || !isFormValid}
+          className="w-full flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <Send size={14} />
-            {loading ? "Sending..." : contactData.ctaText}
+          {loading ? "Sending..." : contactData.ctaText}
         </button>
           {status === "success" && (
             <div className="text-green-500 text-center text-sm font-medium">
