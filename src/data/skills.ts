@@ -88,10 +88,8 @@ export const skillsData: { categories: SkillCategory[] } = {
       skills: [
         { name: "OpenAI", icon: "auto", level: 85 },
         { name: "Google Gemini", icon: "auto", level: 80 },
-        { name: "Claude", icon: "auto", level: 80 },
+        { name: "Google ADK", icon: "auto", level: 80 },
         { name: "Spring AI", icon: "auto", level: 80 },
-        { name: "LangChain", icon: "auto", level: 75 },
-        { name: "LangGraph", icon: "auto", level: 75 },
         { name: "Scikit-Learn", icon: "auto", level: 70 },
       ],
     },
@@ -148,7 +146,7 @@ const deviconMap: Record<string, string> = {
   
   "OpenAI": "chatgpt.svg",
   "Google Gemini": "gemini.svg",
-  "Claude": "claude.svg",
+  "Google ADK": "adk.png",
   "LangChain": "langchain.svg",
   "LangGraph": "langgraph.svg",
   "Scikit-Learn": "scikitlearn.svg",
