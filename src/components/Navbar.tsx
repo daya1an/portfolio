@@ -10,6 +10,19 @@ const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState("#hero");
   const { theme, toggleTheme } = useTheme();
 
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    event.preventDefault();
+    setMobileOpen(false);
+
+    const target = document.getElementById(href.slice(1));
+    if (!target) return;
+
+    window.history.replaceState(null, "", href);
+    window.setTimeout(() => {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
+  };
+
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -42,6 +55,7 @@ const Navbar: React.FC = () => {
             <a
               key={link.href}
               href={link.href}
+              onClick={(event) => handleNavClick(event, link.href)}
               className={`relative px-3 py-2 text-[13px] font-medium transition-colors duration-200 ${
                 activeSection === link.href
                   ? "text-foreground"
@@ -92,7 +106,7 @@ const Navbar: React.FC = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setMobileOpen(false)}
+                  onClick={(event) => handleNavClick(event, link.href)}
                   className={`px-4 py-3 text-sm font-medium rounded-md transition-colors duration-200 ${
                     activeSection === link.href
                       ? "text-foreground bg-muted"

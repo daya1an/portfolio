@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 md:px-8 md:py-20"
+      className="relative min-h-screen scroll-mt-16 flex flex-col items-center justify-center px-4 py-16 md:px-8 md:py-20"
     >
       <div className="relative max-w-5xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         <motion.div
