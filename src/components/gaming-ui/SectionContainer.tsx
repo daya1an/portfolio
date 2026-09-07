@@ -19,7 +19,7 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
   headerAction,
 }) => {
   return (
-    <section id={id} className={`py-20 md:py-28 px-4 md:px-8 ${className}`}>
+    <section id={id} className={`scroll-mt-16 py-20 md:py-28 px-4 md:px-8 ${className}`}>
       <div className="max-w-5xl mx-auto">
         {title && (
           <motion.div
