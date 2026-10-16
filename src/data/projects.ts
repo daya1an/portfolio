@@ -24,8 +24,8 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/daya1an/ecommerce-medallion-lakehouse"
   },
   {
-    title: "Transportation Data Lakehouse",
-    description: "A scalable Medallion data lakehouse on Databricks for a ride-hailing service, processing massive volumes of trips, city, and calendar data from AWS S3 to enable granular, city-level business intelligence and operational analytics across India. Implemented Databricks Auto Loader for streaming ingestion and Delta Live Tables (DLT) to orchestrate the pipeline, utilizing automated CDC (SCD Type 1) for trip updates, data quality expectations, and SQL-based Gold views for dimensional data modeling.",
+    title: "🚕 Transit Analytics Platform",
+    description: "Engineered a self-service transportation intelligence platform with ReactJS, FastAPI, and Databricks, allowing users to onboard datasets, monitor ingestion status, and track city-wide trip operations in near real time. Integrated 356K+ records from AWS S3 through a scalable Medallion lakehouse architecture. Implemented automated batch ingestion using Auto Loader and Spark Declarative Pipelines, incorporating SCD Type 1 updates, data-quality validations, and Delta Lake optimization. Powered live operational dashboards and API-driven analytics while processing ~1.8K daily records with 63% less code.",
     tech: ["Python", "Pyspark", "SQL", "Databricks", "AWS", "Delta Live Tables", "Delta Lake"],
     featured: true,
     githubUrl: "https://github.com/daya1an/transportation-data-lakehouse"
@@ -35,7 +35,7 @@ export const projectsData: Project[] = [
     description: "An AI-powered invoice or subscription approval system that automates approve/reject/manual-review decisions using RAG-grounded LLM reasoning over financial policies, with full audit trail and Stripe powered idempotent payment execution using Redis SETNX locks. Implemented Kafka to decouple API latency from AI processing, used Redis for distributed locking MongoDB Atlas vector search for RAG so the AI grounds decisions in real policies, Resilience4j circuit breaker to stop hammering a failing payment service, and Prometheus for confidence-scored metrics to support compliance audits.",
     tech: ["Spring Boot", "Spring AI", "Google Gemini", "RAG", "MCP", "Kafka", "MongoDB Atlas", "Stripe"],
     featured: true,
-    githubUrl: "https://github.com/daya1an/sentiment-ledger"
+    githubUrl: "https://github.com/daya1an/transit-analytics-platform"
   },
   {
     title: "My Portfolio Website",
