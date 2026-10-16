@@ -24,11 +24,11 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/daya1an/ecommerce-medallion-lakehouse"
   },
   {
-    title: "Transportation Data Lakehouse",
-    description: "A scalable Medallion data lakehouse on Databricks for a ride-hailing service, processing massive volumes of trips, city, and calendar data from AWS S3 to enable granular, city-level business intelligence and operational analytics across India. Implemented Databricks Auto Loader for streaming ingestion and Delta Live Tables (DLT) to orchestrate the pipeline, utilizing automated CDC (SCD Type 1) for trip updates, data quality expectations, and SQL-based Gold views for dimensional data modeling.",
+    title: "🚕 Transit Analytics Platform",
+    description: "Engineered a self-service transportation intelligence platform with ReactJS, FastAPI, and Databricks, allowing users to onboard datasets, monitor ingestion status, and track city-wide trip operations in near real time. Integrated 356K+ records from AWS S3 through a scalable Medallion lakehouse architecture. Implemented automated batch ingestion using Auto Loader and Spark Declarative Pipelines, incorporating SCD Type 1 updates, data-quality validations, and Delta Lake optimization. Powered live operational dashboards and API-driven analytics while processing ~1.8K daily records with 63% less code.",
     tech: ["Python", "Pyspark", "SQL", "Databricks", "AWS", "Delta Live Tables", "Delta Lake"],
     featured: true,
-    githubUrl: "https://github.com/daya1an/transportation-data-lakehouse"
+    githubUrl: "https://github.com/daya1an/transit-analytics-platform"
   },
   {
     title: "Sentiment Ledger",
