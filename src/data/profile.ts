@@ -2,20 +2,25 @@ export const profileData = {
   name: "Dayalan D.S.",
   role: "Software Engineer  •  Cloud  •  DevSecOps • Big Data • AI/ML Integration",
   tagline:
-    "A Full-Stack Engineer with 3 years of experience across the complete SDLC, specializing in distributed systems, microservices, and cloud‑native applications.",
+    "Software Engineer with 3 years of experience across the complete SDLC, specializing in Full Stack Development, Data Engineering, and AI-powered automation for distributed systems and cloud-native applications.",
   greeting: "Hello World! I am",
   bio: [
-    "I am a Software Engineer at Ford GTBC Chennai, with 3 years of experience of delivering secure, scalable applications across distributed systems, from architecture through development till production support.",
-    "At Ford, I work across multiple realtime production systems serving B2B and B2C users, building and owning everything from APIs, event-driven applications, CI/CD workflows, cloud migrations, and frontend interfaces. My work spans API design & development that handles millions of records daily, security hardening using SAST and DAST tools, UI development with performance-optimized data rendering, and infrastructure migrations that cut costs and deployment time and improve deployment reliability significantly.",
-    "I approach problems with a strong foundation in Data Structures, Algorithms, and System Design, which shapes how I architect solutions for throughput, fault tolerance, and scalability rather than just getting things to work.",
-    "Passionate about advancing into large-scale, real-time product engineering across domains like Banking, Fintech, Payments, and Data and AI, while building deeper expertise in AI/ML integration, and Big Data technologies."
+    "I am a Software Engineer at Ford GTBC Chennai with 3+ years of experience contributing to 6+ enterprise production systems, delivering secure, scalable, SOX-compliant applications across cloud-native, distributed, and event-driven architectures.",
+
+    "At Ford, I work across multiple high-impact platforms serving internal and external users, building and owning APIs, microservices, frontend applications, cloud infrastructure, CI/CD pipelines, and data-processing solutions. My experience spans React and Angular development, Kafka-based event-driven systems, Terraform-powered infrastructure automation, Kubernetes/OpenShift platforms, ETL workflows processing millions of records, enterprise chatbot development using Gemini-backed LLMs, RAG and vector search, security remediation, and performance optimization initiatives that improved scalability, reliability, and delivery efficiency.",
+
+    "I approach engineering challenges with a strong foundation in Data Structures, Algorithms, System Design, and software architecture principles, enabling me to build maintainable, fault-tolerant, and high-throughput systems that balance performance, reliability, and long-term scalability.",
+
+    "Passionate about advancing into large-scale, real-time product engineering across domains like Banking, Fintech, Payments, and Data and AI, while building deeper expertise in AI/ML integration, and Big Data technologies.",
   ],
   stats: [
-    { label: "Years of Experience", value: "3+" }, 
-    { label: "Core Tech", value: "Spring, React, Angular" }, 
-    { label: "Domains", value: "Ecommerce,    Logistics, Catalog" }, 
-    { label: "Cloud", value: "AWS, GCP,  OpenShift,  PCF" }, 
+    { label: "Years of Experience", value: "3+" },
+    { label: "Core Tech", value: "Python, Spring Boot, React, Angular" },
+    { label: "Domains", value: "Ecommerce,    Logistics, Catalog" },
+    { label: "Cloud", value: "AWS, GCP,  OpenShift,  PCF" },
   ],
-  resumeUrl: "https://1drv.ms/b/c/cacf8625b8119cb8/IQAvufK1EYePTJjYJYNNuMDVAVo6lYOqx-JMnDltHs8Zqro?e=4E3ZEl",
-  avatarUrl: "https://raw.githubusercontent.com/daya1an/portfolio/main/assets/profile-picture.png",
+  resumeUrl:
+    "https://1drv.ms/b/c/cacf8625b8119cb8/IQAvufK1EYePTJjYJYNNuMDVAVo6lYOqx-JMnDltHs8Zqro?e=4E3ZEl",
+  avatarUrl:
+    "https://raw.githubusercontent.com/daya1an/portfolio/main/assets/profile-picture.png",
 };
