@@ -20,7 +20,7 @@ export const profileData = {
     { label: "Cloud", value: "AWS, GCP,  OpenShift,  PCF" },
   ],
   resumeUrl:
-    "https://1drv.ms/b/c/cacf8625b8119cb8/IQAvufK1EYePTJjYJYNNuMDVAVo6lYOqx-JMnDltHs8Zqro?e=4E3ZEl",
+    "https://1drv.ms/b/c/cacf8625b8119cb8/IQDyTPFT80bvSaEFr-1PFFaaAWpxgIWeaYWgGOhERycTTZs?e=v5n21D",
   avatarUrl:
     "https://raw.githubusercontent.com/daya1an/portfolio/main/assets/profile-picture.png",
 };
