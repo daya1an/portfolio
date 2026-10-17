@@ -3,7 +3,7 @@ export const socialData = {
     { platform: "GitHub", url: "https://github.com/daya1an", icon: "github" },
     { platform: "LinkedIn", url: "https://linkedin.com/in/dayalands", icon: "linkedin" },
     { platform: "Email", url: "mailto:dayalands2210@gmail.com", icon: "mail" },
-    { platform: "Instagram", url: "https://www.instagram.com/_d.a.y.a.l.a.n_", icon: "instagram" },
+    { platform: "Instagram", url: "https://www.instagram.com/dayalan_d.s._?cplk=bWNvaHpocWsydGw3", icon: "instagram" },
   ],
   gamerTag: "DAYALAN D S",
   discord: "",
