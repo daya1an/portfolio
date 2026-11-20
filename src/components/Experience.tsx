@@ -61,7 +61,7 @@ const Experience: React.FC = () => {
   );
 
   return (
-    <SectionContainer id="experience" title="Professional Experience" subtitle="Java Full Stack Engineer - Ford Motor Company (2023 - Present)">
+    <SectionContainer id="experience" title="Professional Experience" subtitle="Software Engineer - Ford Motor Company (2023 - Present)">
       <div className="hidden md:block">
         <Timeline
           value={experienceData.map((item, index) => ({ ...item, _index: index }))}

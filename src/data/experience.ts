@@ -14,21 +14,21 @@ export const experienceData: Experience[] = [
     company: "New App Development",
     period: "2026Q2 – Present",
     description:
-      "Base - Mainframe application, birth place of Ford Engineering and Service Parts Details. Functioning as SME for the Modernized Part of this Application.",
+      "Mainframe system of record for Ford Engineering and Service Parts data; serving as subject-matter expert for its modernization.",
     highlights: [
-      "Own APIs serving 15+ downstream applications, applying Spec-Driven Design, concurrency controls, and query optimization to deliver low-latency platform services.",
+      "Own REST APIs serving 15+ downstream applications, applying spec-driven design, concurrency controls, and query optimization to achieve low latency.",
 
-      "Introduced a React-based SPA consuming shared APIs, enabling real-time vehicle-part validation and driving adoption across multiple Ford engineering teams.",
+      "Introduced a React SPA with Redux state management on shared APIs for real-time vehicle-part validation, adopted by 25+ Ford teams.",
 
-      "Optimized the Global Parts Lookup API through concurrent processing and adaptive multithreading for bulk retrieval, increasing throughput by 60%.",
+      "Optimized the Global Parts Lookup API with concurrent processing and adaptive multithreading for bulk retrieval, increasing throughput by 60%.",
 
-      "Built batch-processing microservices supporting ETL workflows, processing 1M+ records daily with GCS-backed auditability and reliable SFTP integrations.",
+      "Built batch-processing microservices for ETL workflows, processing 1M+ records daily with audit files in Google Cloud Storage and SFTP integrations.",
 
-      "Resolved critical defects in Python ETL pipelines, improving data quality by 15% for mainframe-to-BigQuery transformations powering downstream APIs.",
+      "Resolved critical defects in Python ETL scripts, improving data quality by 15% for mainframe-to-BigQuery transformations that feed downstream APIs.",
 
-      "Automated GCP infrastructure provisioning across IAM, Cloud Run, Storage, Scheduler, Databases, and BigQuery using Terraform, reducing operational effort.",
+      "Automated GCP infrastructure provisioning across IAM, Cloud Storage, Cloud Run, Scheduler, databases, and BigQuery with Terraform, reducing manual effort.",
 
-      "Resolved Tekton pipeline failures, migrated CI/CD workflows to GitHub Actions, integrated SAST scans, and reduced deployment time by 50%.",
+      "Resolved Tekton pipeline failures and migrated CI/CD workflows to GitHub Actions with SAST scans, cutting deployment time by 50% and improving security.",
     ],
     tech: [
       "React",
@@ -46,23 +46,23 @@ export const experienceData: Experience[] = [
     level: 5,
   },
   {
-    title: "Ecommerce Catalog",
-    company: "COTS Application - Infrastructure Migration",
+    title: "E-Commerce Application",
+    company: "Infrastructure Management and System Design Support",
     period: "2025Q3 – Present",
     description:
-      "An Ecommerce Site that allows users to browse ford vehicles and its associated part details. Enabling successful migration by providing architecture, design, and technical guidance to vendor teams, ensuring alignment with enterprise standards and scalable migration practices.",
+      "E-commerce platform for browsing Ford vehicles and associated parts; provided architecture, design, and technical guidance for scalable AWS migration.",
     highlights: [
-      "Owned container and database platforms, leveraging Dynatrace for performance testing, monitoring, and incident resolution to ensure platform availability.",
+      "Owned AWS EKS and database platforms, using Dynatrace for load and performance testing, monitoring, and incident resolution to maintain availability.",
 
-      "Led architecture reviews using AI-assisted analysis, proof-of-concepts, and feasibility assessments, reducing implementation risks by 40%.",
+      "Led high-level design reviews using AI-driven analysis, proof-of-concepts, and feasibility studies to validate AWS approaches and reduce implementation risk.",
 
-      "Defined low-level design standards for APIs, batch-processing systems, and Angular applications, reducing defects by 20% and onboarding time by 30%.",
+      "Defined API, batch-processing, and Angular design standards for scalable AWS applications, reducing defects by 20% and onboarding time by 30%.",
 
-      "Migrated Microsoft SQL Server workloads to GCP Cloud SQL, reconfigured data sources, managed DDL/DML changes, and maintained Terraform automation.",
+      "Migrated on-premises SQL Server workloads to Amazon RDS, transitioned enterprise data sources, and automated AWS infrastructure provisioning with Terraform.",
 
-      "Implemented automated database maintenance workflows for statistics updates, index rebuilds, and integrity validation, preventing downtime and performance issues.",
+      "Configured weekly Amazon RDS maintenance to update statistics, rebuild indexes, and run integrity checks, preventing downtime and preserving data integrity.",
 
-      "Mentored junior engineers on seller-platform architecture, API design, distributed caching, business workflows, and engineering best practices.",
+      "Provided architecture and technical guidance to vendor teams, aligning migration delivery with enterprise standards and scalable engineering practices.",
     ],
     tech: [
       "Angular",
@@ -70,10 +70,9 @@ export const experienceData: Experience[] = [
       "Spring Boot",
       "Terraform",
       "MS SQL Server",
-      "Entra Id",
-      "GCP",
+      "AWS EKS",
+      "Amazon RDS",
       "DB Migration",
-      "OpenShift",
       "Dynatrace",
     ],
     level: 4,
@@ -83,25 +82,27 @@ export const experienceData: Experience[] = [
     company: "Legacy Application Modernization",
     period: "2025Q4 – 2026Q1",
     description:
-      "An application used to seek Exemptions approvals and track Trademark compliance, which connects Global Analysts and Supervisors, to raise Requests, Proposals, and Approvals. Modernized this legacy application by rebuilding UI, optimizing data handling, enforcing security standards, and delivering resilient APIs with enterprise compliance.",
+      "Trademark-compliance platform for exemption requests, proposals, and approvals; modernized its UI, APIs, data handling, and security controls.",
     highlights: [
-      "Partnered directly with product owners and end users as a Forward Deployed Engineer, translating requirements into scalable production-ready features.",
+      "Functioned as a Forward Deployed Engineer, partnering with product owners and end users to translate business workflows into production CRM features.",
 
-      "Modernized a legacy application using a component-based React architecture with reusable components, hooks, Context API, HOCs, Axios, and React Router.",
+      "Modernized the legacy UI with component-based React architecture, reusable components, hooks, Context API, HOCs, Axios, and React Router.",
 
       "Developed data-intensive React components, tree views, and enterprise data tables with optimized rendering, search, and filtering for large datasets.",
 
-      "Introduced a file-management microfrontend supporting Excel import/export and 8+ file formats, backed by a GCS-integrated microservice.",
+      "Introduced a file-management microfrontend supporting Excel import/export and 8+ file formats, backed by a Google Cloud Storage-integrated microservice.",
 
-      "Developed scalable APIs using SOLID principles, DDD, OOP, and design patterns, enabling modular architecture and faster feature delivery.",
+      "Developed scalable APIs using SOLID principles, design patterns, object-oriented programming, and domain-driven design for modular, maintainable code.",
 
-      "Improved API reliability through Redis caching, pagination, rate limiting, and query optimization, reducing over-fetching and database load.",
+      "Improved API reliability with Redis-based distributed caching, pagination, rate limiting, and query tuning, minimizing over-fetching and database load.",
 
-      "Built an AI-powered chatbot using Ford's Gemini-backed LLM API, RAG, and pgVector, delivering contextual answers from requests, proposals, and design guides.",
+      "Built an AI chatbot using Google's Gemini LLM, retrieval-augmented generation, and pgvector to deliver context-aware answers from requests and design guides.",
 
-      "Implemented AES-GCM encryption for PII/SPII data and remediated 100+ OWASP vulnerabilities, achieving compliance through SAST and DAST validation.",
+      "Developed a RAG-based classification engine that summarizes inbound requests and enables automated approval, rejection, or flag-for-review decisions.",
 
-      "Improved release quality through unit, integration, E2E, and cross-browser testing with JUnit, Jest, and Playwright, achieving 75% code coverage.",
+      "Implemented AES-GCM encryption for PII/SPII and remediated 100+ SAST/DAST-identified vulnerabilities aligned with OWASP guidance.",
+
+      "Improved release quality through unit, integration, end-to-end, and cross-browser testing with Jest, Playwright, JMeter, and JUnit, achieving 75% code coverage.",
     ],
     tech: [
       "React",
@@ -118,27 +119,29 @@ export const experienceData: Experience[] = [
     level: 3,
   },
   {
-    title: "Global Catalog",
-    company: "Enhancement Project",
+    title: "Global Catalogue Application",
+    company: "Platform Modernization and Enhancements",
     period: "2025Q1 – 2025Q3",
     description:
-      "An Inventory Management System that retrieves part details from Parts Control, allows users to catalog them, and distributes the information to multiple downstream systems. Enhanced application's modules by delivering new features, building resilient APIs, strengthening authentication, and streamlining CI/CD for performance and security.",
+      "Inventory management system that catalogs Parts Control data and distributes it to downstream systems; enhanced through UI, API, security, and CI/CD improvements.",
     highlights: [
-      "Developed Angular components from Figma designs, delivering interactive tables, tree views, and modals that enhanced usability over legacy applications.",
+      "Built Angular components from Figma designs, delivering dynamic tables, tree views, and modals that improved user experience over legacy systems.",
 
-      "Leveraged enterprise AI tooling to implement lazy loading, route guards, and navigation enhancements, accelerating development and feature delivery.",
+      "Used enterprise-approved AI tooling (OpenCode) to implement lazy loading, route guards, and navigation enhancements, accelerating feature delivery.",
 
-      "Applied RxJS-based reactive validation, debounced inputs, and state-management patterns to improve UI responsiveness and data accuracy.",
+      "Applied RxJS-based reactive form validation, debounced input handling, and state-management patterns to improve UI responsiveness and data accuracy.",
 
-      "Built resilient microservices leveraging Service Discovery, Sidecar, and Saga patterns with Spring Data JPA, ensuring reliability and transactional consistency.",
+      "Streamlined file upload and download workflows through AJAX-based client API communication, improving responsiveness and user experience.",
 
-      "Developed Kafka-based microservices and aggregation services, enabling scalable asynchronous messaging and decoupled distributed-system communication.",
+      "Built resilient microservices using service-discovery, sidecar, and saga patterns, ensuring reliable database transactions with Spring Data JPA.",
 
-      "Implemented OAuth 2.0 authentication with Entra ID and JWKS caching for JWT validation, reducing authorization latency by 65% across services.",
+      "Developed Kafka-based microservices and data aggregation services, enabling reliable asynchronous messaging and scalable, decoupled architectures.",
 
-      "Enabled inter-service communication across 15+ microservices using RestTemplate and centralized dependency management through Gradle BOM versioning.",
+      "Implemented Spring Security authentication and authorization with OAuth 2.0 via Entra ID, caching JWKS for JWT validation to reduce latency by 65%.",
 
-      "Architected a DAM solution using GCS buckets and signed URLs to bypass Apigee transfer limits, enabling secure access to large digital assets.",
+      "Implemented inter-service REST communication across 15+ microservices using RestTemplate, with centralized dependency versioning through Gradle BOM.",
+
+      "Architected a DAM solution using Google Cloud Storage and signed URLs to overcome gateway payload-size limits and securely deliver large digital assets.",
     ],
     tech: [
       "Angular",
@@ -157,24 +160,24 @@ export const experienceData: Experience[] = [
   },
   {
     title: "Global Service Parts Packaging System",
-    company: "Legacy Application - Infrastructure Migration",
+    company: "Cloud Migration, Microservices Modernization & Performance Optimization",
     period: "2024Q1 – 2026Q3",
     description:
-      "Global Application for creating and managing packaging and logistics specifications of Engineering and Service Parts. Modernized legacy infrastructure by upgrading codebase, migrating workloads to OpenShift, strengthening API security, and optimizing batch operations with enterprise standards.",
+      "Global platform for creating and managing engineering and service-parts packaging specifications; modernized infrastructure, microservices, and batch operations.",
     highlights: [
-      "Migrated a WAS Liberty application and 10+ microservices from PCF to OpenShift, simplifying Kubernetes workload orchestration in a distributed environment.",
+      "Deployed a WebSphere Liberty application and 10+ Spring Boot microservices on OpenShift CaaS, enabling scalable deployments across environments.",
 
-      "Consolidated region-specific batch workloads into a configurable multi-region microservice with PL/SQL integrations, reducing maintenance effort by 3x.",
+      "Consolidated four region-specific batch jobs into one configurable multi-region microservice with PL/SQL integrations, reducing maintenance overhead.",
 
-      "Developed a Spring Boot and Thymeleaf reporting service enabling dynamic PackSpec generation, on-demand rendering, and downloadable business reports.",
+      "Developed a Spring MVC microservice using Thymeleaf to render dynamic PackSpec reports from database records, with PDF and Excel export.",
 
-      "Optimized batch-processing microservices through partitioning, multithreaded execution, and chunk tuning, increasing throughput for downstream applications.",
+      "Optimized batch-processing microservices through partitioning, multithreaded execution, and chunk tuning to improve throughput for downstream applications.",
 
-      "Orchestrated Kubernetes workloads using Deployments, Services, Secrets, NetworkPolicies, CronJobs, HPA, Prometheus, and alerting mechanisms.",
+      "Orchestrated Kubernetes workloads with Pods, Deployments, Services, Secrets, NetworkPolicies, Prometheus, CronJobs, alerts, and HPA.",
 
-      "Integrated Dynatrace and Splunk sidecars for runtime observability, monitoring infrastructure and application metrics to reduce production outages.",
+      "Integrated Dynatrace and Splunk sidecars to monitor CPU, memory, and runtime metrics during load and performance testing, reducing outages.",
 
-      "Led knowledge-transfer sessions for 10+ engineers on OpenShift, covering CronJobs, SSL/DNS, Prometheus alerts, and operational best practices.",
+      "Led knowledge-transfer sessions for 10+ engineers on OpenShift, covering CronJobs, SSL/DNS, Prometheus rules, and alerts with supporting documentation.",
     ],
     tech: [
       "Java",
